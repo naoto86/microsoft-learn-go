@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"github.com/myuser/calculator"
+	"rsc.io/quote"
+)
 
 func main() {
-	fmt.Println("Hello World!")
+	total := calculator.Sum(3, 5)
+	println(total)
+	println("Version: ", calculator.Version)
+	println(quote.Hello())
 }
